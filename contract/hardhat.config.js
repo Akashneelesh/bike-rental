@@ -22,8 +22,8 @@ module.exports = {
   solidity: "0.8.4",
   networks: {
     testnet: {
-      url: "https://speedy-nodes-nyc.moralis.io/ae1154977cde3335fed0e421/bsc/testnet",
-      accounts: ["0132f75662c441c81027bdc3cdfc93b2868da8de080d71c39f4d86158a612061"],
+      url: process.env.CONTRACT_URL,
+      accounts: [process.env.CONTRACT_ADDRESS],
     }
   }
 };
